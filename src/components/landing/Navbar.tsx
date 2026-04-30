@@ -17,7 +17,7 @@ const Navbar = () => {
             </span>
             Sentinela
           </Link>
-          <div className="hidden md:flex items-center gap-8 text-sm">
+          <div className="flex items-center gap-4 sm:gap-8 text-sm">
             <Link to="/" className={linkCls(pathname === "/")}>Produto</Link>
             <Link to="/planos" className={linkCls(pathname === "/planos")}>Planos</Link>
           </div>
