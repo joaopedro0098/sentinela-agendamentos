@@ -3,8 +3,6 @@ import Hero from "@/components/landing/Hero";
 import VideoDemo from "@/components/landing/VideoDemo";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Benefits from "@/components/landing/Benefits";
-import Pricing from "@/components/landing/Pricing";
-import FinalCTA from "@/components/landing/FinalCTA";
 
 const Index = () => {
   return (
@@ -14,8 +12,6 @@ const Index = () => {
       <VideoDemo />
       <HowItWorks />
       <Benefits />
-      <Pricing />
-      <FinalCTA />
     </main>
   );
 };
