@@ -1,9 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative pt-36 pb-20 overflow-hidden">
+    <section className="relative pt-36 pb-12 overflow-hidden">
       {/* glow orbs */}
       <div className="absolute top-20 left-1/4 w-72 h-72 rounded-full bg-[hsl(var(--brand-violet)/0.25)] blur-3xl animate-pulse-glow" />
       <div className="absolute top-40 right-1/4 w-72 h-72 rounded-full bg-[hsl(var(--brand-blue)/0.25)] blur-3xl" />
@@ -21,21 +20,15 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A IA que responde seus clientes e agenda automaticamente <strong className="text-foreground">24h por dia</strong> direto no WhatsApp.
+            A IA que responde seus clientes e agenda automaticamente <strong className="text-foreground">24h por dia</strong>.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-            <Button asChild size="lg" className="bg-gradient-brand hover:opacity-90 text-white border-0 rounded-full px-8 h-14 text-base shadow-glow animate-pulse-glow">
-              <a href="#planos">Começar agora <ArrowRight className="w-5 h-5 ml-1" /></a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="rounded-full px-8 h-14 text-base bg-transparent border-border hover:bg-secondary">
-              <a href="#como-funciona">Ver como funciona</a>
-            </Button>
+          <div className="pt-6 space-y-3">
+            <h2 className="text-3xl md:text-4xl font-bold font-display">
+              Veja a Sentinela em <span className="text-gradient">ação</span>
+            </h2>
+            <p className="text-muted-foreground">Uma demonstração rápida de como a IA atende e agenda sozinha.</p>
           </div>
-
-          <p className="text-xs text-muted-foreground pt-2">
-            ⚡ Setup em minutos · Sem cartão de crédito para testar
-          </p>
         </div>
       </div>
     </section>

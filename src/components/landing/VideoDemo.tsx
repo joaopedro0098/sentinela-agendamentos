@@ -1,30 +1,16 @@
-import { Play } from "lucide-react";
+import { Play, ArrowRight, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const VideoDemo = () => {
   return (
     <section className="relative py-12">
       <div className="container">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold font-display">
-              Veja a Sentinela em <span className="text-gradient">ação</span>
-            </h2>
-            <p className="text-muted-foreground mt-3">Uma demonstração rápida de como a IA atende e agenda sozinha.</p>
-          </div>
-
           <div className="relative group">
             {/* gradient border wrapper */}
             <div className="absolute -inset-1 bg-gradient-brand rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
             <div className="relative glass rounded-3xl overflow-hidden glow-border">
               <div className="aspect-video w-full relative bg-secondary/40 flex items-center justify-center">
-                {/*
-                  📹 SUBSTITUA AQUI PELO SEU VÍDEO:
-                  Opção 1 — vídeo local em /public/demo.mp4:
-                  <video src="/demo.mp4" controls poster="/poster.jpg" className="w-full h-full object-cover" />
-
-                  Opção 2 — YouTube:
-                  <iframe src="https://www.youtube.com/embed/SEU_ID" title="Demo Sentinela" allowFullScreen className="w-full h-full" />
-                */}
                 <video
                   controls
                   className="w-full h-full object-cover"
@@ -44,6 +30,27 @@ const VideoDemo = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* CTAs abaixo do vídeo */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-brand hover:opacity-90 text-white border-0 rounded-full px-8 h-14 text-base shadow-glow animate-pulse-glow w-full sm:w-auto"
+            >
+              <a href="/planos">Começar agora <ArrowRight className="w-5 h-5 ml-1" /></a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="rounded-full px-8 h-14 text-base bg-transparent border-border hover:bg-secondary w-full sm:w-auto"
+            >
+              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5 mr-1" /> Fale conosco
+              </a>
+            </Button>
           </div>
         </div>
       </div>
