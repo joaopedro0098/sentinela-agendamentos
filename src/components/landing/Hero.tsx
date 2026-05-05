@@ -22,7 +22,7 @@ const Hero = () => {
               Veja a Sentinela em <span className="text-gradient">ação</span>
             </h2>
           </div>
-      
+        </div>
       </div>
     </section>
   );
