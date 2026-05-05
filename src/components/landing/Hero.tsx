@@ -11,7 +11,6 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm">
             <Sparkles className="w-4 h-4 text-[hsl(var(--brand-pink))]" />
-            <span className="text-muted-foreground">Powered by AI · Atendimento 24/7</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] font-display">
@@ -20,7 +19,8 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A IA que responde seus clientes e agenda automaticamente <strong className="text-foreground">24h por dia</strong>.
+            A IA que responde seus clientes e agenda automaticamente{" "}
+            <strong className="text-foreground">24h por dia</strong>.
           </p>
 
           <div className="pt-6 space-y-3">
