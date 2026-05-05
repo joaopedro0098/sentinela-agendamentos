@@ -9,12 +9,12 @@ const steps = [
   {
     icon: Bot,
     title: "IA responde instantaneamente",
-    desc: "A Sentinela entende, conversa de forma natural e tira dúvidas em segundos.",
+    desc: "A Sentinela entende, conversa de forma natural faz os agendamento e tira dúvidas.",
   },
   {
     icon: CalendarCheck,
     title: "Agendamento automático",
-    desc: "O horário é registrado direto na sua planilha do Google Sheets, sem erro.",
+    desc: "O horário é registrado direto na sua planilha do Google Sheets.",
   },
 ];
 
