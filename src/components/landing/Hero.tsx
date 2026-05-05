@@ -1,5 +1,3 @@
-import { Sparkles } from "lucide-react";
-
 const Hero = () => {
   return (
     <section className="relative pt-36 pb-12 overflow-hidden">
