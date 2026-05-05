@@ -40,7 +40,9 @@ const Planos = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--brand-violet)/0.15),transparent_60%)]" />
         <div className="container relative">
           <Button asChild variant="ghost" size="sm" className="mb-8 rounded-full">
-            <Link to="/"><ArrowLeft className="w-4 h-4 mr-1" /> Voltar</Link>
+            <Link to="/">
+              <ArrowLeft className="w-4 h-4 mr-1" /> Voltar
+            </Link>
           </Button>
 
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -48,9 +50,6 @@ const Planos = () => {
             <h1 className="text-4xl md:text-6xl font-bold mt-3 font-display">
               Escolha o plano <span className="text-gradient">ideal</span>
             </h1>
-            <p className="text-muted-foreground mt-4">
-              🔥 Vagas limitadas neste mês — comece hoje e garanta seu preço.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -82,7 +81,9 @@ const Planos = () => {
                 <ul className="space-y-3 mb-8 flex-1">
                   {sharedFeatures.map((f) => (
                     <li key={f} className="flex items-start gap-3 text-sm">
-                      <span className={`w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5 ${plan.highlight ? "bg-gradient-brand" : "bg-secondary"}`}>
+                      <span
+                        className={`w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5 ${plan.highlight ? "bg-gradient-brand" : "bg-secondary"}`}
+                      >
                         <Check className="w-3 h-3 text-white" strokeWidth={3} />
                       </span>
                       <span className="text-muted-foreground">{f}</span>
