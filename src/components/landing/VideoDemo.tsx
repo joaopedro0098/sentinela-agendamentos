@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const VideoDemo = () => {
   return (
-    <section className="relative py-12">
+    <section className="relative pt-4 pb-12">
       <div className="container">
         <div className="max-w-5xl mx-auto">
           <div className="relative group">
