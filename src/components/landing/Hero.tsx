@@ -19,7 +19,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A IA que responde seus clientes e agenda automaticamente{" "}
+            Atenda seus clientes com uma Inteligência Artificial personalizada para a sua empresa{" "}
             <strong className="text-foreground">24h por dia</strong>.
           </p>
 
