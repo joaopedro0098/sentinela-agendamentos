@@ -9,7 +9,7 @@ const steps = [
   {
     icon: Bot,
     title: "IA responde instantaneamente",
-    desc: "A Sentinela entende, conversa de forma natural faz os agendamento e tira dúvidas.",
+    desc: "O Sentinela entende, conversa de forma natural faz os agendamento e tira dúvidas.",
   },
   {
     icon: CalendarCheck,
