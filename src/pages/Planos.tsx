@@ -45,7 +45,7 @@ const Planos = () => {
             </Link>
           </Button>
 
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-8">
             <span className="text-sm font-semibold text-gradient uppercase tracking-wider">Planos</span>
             <h1 className="text-4xl md:text-6xl font-bold mt-3 font-display">
               Escolha o plano <span className="text-gradient">ideal</span>
